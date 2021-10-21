@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+	        src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			crossorigin="anonymous"></script>
+        <script src="./snake.js"></script>
+        <title>Snake</title>
+    </head>
+    <body>
+        <div>
+            <h1>Snake</h1>
+        </div>
+        <div>
+            <p id="here"></p>
+            <input type="button" disabled onclick="clearInterval(timer)" value="clock stop" />
+          
+           
+            <input id="stop" type="button" onclick="clearInterval(timer)" value="Stop" />
+             
+            
+            <input id="left" type="button" value="Left" />
+            <input id="right" type="button" value="Right" />
+        </div>
+        <div>
+            <canvas id="canvas" width="300" height="300" style="border:1px solid #000000;"></canvas>
+        </div>
+    </body>
+</html>
